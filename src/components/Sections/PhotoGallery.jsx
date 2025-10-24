@@ -232,15 +232,20 @@ const PhotoGallery = () => {
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
         <div className="text-center mb-16" data-aos="fade-up">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-              Gallery
-            </span>{" "}
-            Sejarah
-          </h2>
-          <p className="text-gray-400 text-lg mb-8">
-            Dokumentasi visual perjalanan lebih dari 18 tahun organisasi
-          </p>
+  <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
+    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+      Galeri
+    </span>{" "}
+    Kepemimpinan KSB
+  </h2>
+          <p className="text-gray-400 text-lg mt-4 max-w-2xl mx-auto leading-relaxed">
+  Berawal dari <span className="text-cyan-400 font-semibold">HIMTI</span> yang kemudian menjadi 
+  <span className="text-cyan-400 font-semibold"> HIMATIKA</span> pada tahun 2007, 
+  organisasi ini resmi bertransformasi menjadi 
+  <span className="text-blue-400 font-semibold"> BEM FIKOM</span> pada tahun 2018. 
+  Setiap periode kepengurusan membawa semangat dan inovasi baru bagi kemajuan FIKOM.
+</p>
+
 
           <div
             className="flex flex-wrap justify-center gap-4 mb-8"
