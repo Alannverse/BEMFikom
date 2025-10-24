@@ -58,7 +58,7 @@ const Gallery = () => {
     setSelectedImage(activities[prevIndex]);
   };
 
-  // Close lightbox dengan ESC key
+  
   React.useEffect(() => {
     const handleEscape = (e) => {
       if (e.key === 'Escape') closeLightbox();
@@ -66,7 +66,7 @@ const Gallery = () => {
 
     if (selectedImage) {
       document.addEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'hidden'; // Prevent scroll
+      document.body.style.overflow = 'hidden'; 
     }
 
     return () => {
@@ -84,7 +84,7 @@ const Gallery = () => {
               className="text-5xl md:text-6xl font-black text-white mb-6"
               data-aos="fade-down"
             >
-              Gallery Kegiatan
+              
             </h3>
             <div 
               className="inline-block bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-sm px-6 py-3 rounded-full border border-blue-400/30"

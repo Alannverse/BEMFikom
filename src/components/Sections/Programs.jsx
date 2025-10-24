@@ -1,5 +1,5 @@
 import React from 'react';
-import { programs } from '../../data/constants';  // ← DUA KALI ../
+import { programs } from '../../data/constants';  
 
 const Programs = () => {
   return (

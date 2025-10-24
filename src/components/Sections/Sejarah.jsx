@@ -47,7 +47,7 @@ const Sejarah = () => {
   return (
     <section className="py-20 px-6" id="sejarah">
       <div className="max-w-4xl mx-auto">
-        {/* Header Section - Diperkecil */}
+        
         <div className="text-center mb-12">
           <h3 
             className="text-4xl md:text-5xl font-black text-white mb-4"
@@ -64,12 +64,12 @@ const Sejarah = () => {
           </div>
         </div>
 
-        {/* Timeline */}
+        
         <div className="relative">
-          {/* Timeline Line */}
+          
           <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></div>
           
-          {/* Timeline Items */}
+          
           <div className="space-y-8">
             {milestones.map((milestone, index) => (
               <div
@@ -80,20 +80,20 @@ const Sejarah = () => {
                 data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
                 data-aos-delay={index * 100}
               >
-                {/* Content */}
+              
                 <div className={`w-1/2 ${index % 2 === 0 ? 'pr-6' : 'pl-6'}`}>
                   <div className="bg-white/5 backdrop-blur-xl rounded-xl p-5 border border-white/10">
-                    {/* Year Badge - Diperkecil */}
+                   
                     <div className="inline-flex items-center gap-1 bg-white/10 px-3 py-1 rounded-full border border-white/10 mb-3">
                       <Calendar className="w-3 h-3 text-blue-400" />
                       <span className="text-blue-200 text-xs font-medium">{milestone.year}</span>
                     </div>
                     
-                    {/* Title & Description - Diperkecil */}
+                    
                     <h4 className="text-lg font-bold text-white mb-2">{milestone.title}</h4>
                     <p className="text-gray-300 leading-relaxed text-xs mb-3">{milestone.description}</p>
                     
-                    {/* Leaders Section - Diperkecil */}
+                    
                     <div className="border-t border-white/10 pt-3">
                       <div className="flex items-center gap-1 mb-1">
                         <Crown className="w-3 h-3 text-yellow-400" />
@@ -117,10 +117,10 @@ const Sejarah = () => {
                   </div>
                 </div>
 
-                {/* Timeline Dot - Diperkecil */}
+               
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full border-2 border-slate-900 z-10"></div>
 
-                {/* Icon - Diperkecil */}
+                
                 <div className={`w-1/2 ${index % 2 === 0 ? 'pl-6' : 'pr-6'}`}>
                   <div className="flex justify-center">
                     <div className={`w-12 h-12 bg-gradient-to-br ${milestone.color} rounded-xl flex items-center justify-center`}>
@@ -133,7 +133,7 @@ const Sejarah = () => {
           </div>
         </div>
 
-        {/* Summary Section - Diperkecil */}
+        
         <div 
           className="mt-12 text-center"
           data-aos="fade-up"
@@ -148,7 +148,7 @@ const Sejarah = () => {
               mewadahi aspirasi dan mengembangkan potensi mahasiswa.
             </p>
             
-            {/* Current Leader - Diperkecil */}
+          
             <div className="inline-flex items-center gap-2 bg-cyan-500/10 px-4 py-2 rounded-full border border-cyan-500/30">
               <Crown className="w-4 h-4 text-cyan-400" />
               <span className="text-cyan-200 text-xs font-medium">

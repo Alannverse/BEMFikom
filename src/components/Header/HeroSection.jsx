@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <header className="min-h-screen flex items-center justify-center px-6 py-20">
       <div className="max-w-4xl mx-auto text-center">
-        {/* Logo Besar dengan Hover Effect */}
+        
         <div 
           className="relative w-48 h-48 mx-auto mb-8 group"
           data-aos="zoom-in"
@@ -20,7 +20,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Badge dengan Sparkle Effect */}
+       
         <div 
           className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-sm px-5 py-3 rounded-full border border-blue-400/30 mb-8 group hover:scale-105 transition-all duration-300"
           data-aos="fade-up"
@@ -30,7 +30,7 @@ const HeroSection = () => {
           <span className="text-cyan-200 text-sm font-medium">Pengurus 2025/2026</span>
         </div>
         
-        {/* Title dengan Gradient Animasi */}
+       
         <h1 
           className="text-5xl md:text-7xl font-black text-white mb-6"
           data-aos="fade-up"
@@ -41,7 +41,7 @@ const HeroSection = () => {
           </span>
         </h1>
         
-        {/* Subtitle dengan Stagger Animation */}
+       
         <div 
           className="space-y-3 mb-8"
           data-aos="fade-up"
@@ -55,7 +55,7 @@ const HeroSection = () => {
           </p>
         </div>
         
-        {/* CTA Button yang Lebih Menarik */}
+        
         <div 
           className="mb-12"
           data-aos="fade-up"
@@ -70,7 +70,7 @@ const HeroSection = () => {
           </button>
         </div>
 
-        {/* Stats dengan Icons */}
+        
         <div 
           className="grid grid-cols-3 gap-6 max-w-md mx-auto mb-12"
           data-aos="fade-up"
@@ -93,7 +93,7 @@ const HeroSection = () => {
           ))}
         </div>
 
-        {/* Scroll Indicator yang Lebih Modern */}
+       
         <div 
           className="flex flex-col items-center gap-3"
           data-aos="fade-up"
@@ -106,7 +106,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* CSS untuk Gradient Animation */}
+      
       <style jsx>{`
         @keyframes gradient {
           0% { background-position: 0% 50%; }

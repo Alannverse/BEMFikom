@@ -10,9 +10,9 @@ export const coordinators = [
   { name: 'Rafael enos taruklawa', division: 'Keilmuan', image: 'enos keilmuan.jpg' },
   { name: 'Setiani', division: 'Kerohanian', image: 'setiani rohani.jpg' },
   { name: 'Revan delio patjanan', division: 'Humas', image: 'revan humas.jpg' },
-  { name: 'Ayub fortuna boro', division: 'Kesekretariatan', image: 'https://via.placeholder.com/250x250/3b82f6/ffffff?text=Kesekretariatan' },
+  { name: 'Ayub fortuna boro', division: 'Kesekretariatan', image: 'ayub kesek.jpg' },
   { name: 'Rut natalia', division: 'Kaderisasi', image: 'rut kader.jpg' },
-  { name: 'Nama Koordinator', division: 'Keuangan', image: 'https://via.placeholder.com/250x250/3b82f6/ffffff?text=Keuangan' }
+  { name: 'Nama Koordinator', division: 'Keuangan', image: 'dita keuangan.jpg' }
 ];
 
 export const programs = [

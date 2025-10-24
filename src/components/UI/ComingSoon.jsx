@@ -9,7 +9,7 @@ const ComingSoon = () => {
           data-aos="fade-up" 
           data-aos-duration="800"
         >
-          {/* Main Title dengan Animasi */}
+         
           <div className="space-y-4">
             <h3 className="text-5xl md:text-6xl font-black text-white">
               COMING
@@ -18,7 +18,7 @@ const ComingSoon = () => {
               </span>
             </h3>
             
-            {/* Subtle Divider seperti Option 5 */}
+            
             <div 
               className="w-24 h-0.5 bg-gradient-to-r from-blue-500/40 to-purple-500/40 mx-auto rounded-full"
               data-aos="fade-up"
@@ -27,7 +27,7 @@ const ComingSoon = () => {
             ></div>
           </div>
           
-          {/* Modern Indonesian Subtitle */}
+         
           <p 
             className="text-blue-200/80 text-xl"
             data-aos="fade-up"
@@ -36,7 +36,7 @@ const ComingSoon = () => {
             Website resmi BEM FIKOM <span className="text-cyan-300">segera launching</span>!
           </p>
 
-          {/* Loading Dots seperti Option 5 */}
+         
           <div 
             className="flex justify-center items-center gap-3"
             data-aos="fade-up"
