@@ -57,18 +57,25 @@ const HeroSection = () => {
         
         
         <div 
-          className="mb-12"
-          data-aos="fade-up"
-          data-aos-delay="400"
-        >
-          <button className="group relative bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-4 rounded-2xl text-white font-semibold shadow-2xl shadow-blue-500/30 hover:shadow-purple-500/50 transition-all duration-500 hover:scale-105">
-            <span className="flex items-center gap-3">
-              Jelajahi Selengkapnya
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-          </button>
-        </div>
+  className="mb-12"
+  data-aos="fade-up"
+  data-aos-delay="400"
+>
+  <button className="group relative inline-flex items-center justify-center px-8 py-4 rounded-3xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-lg shadow-xl shadow-blue-500/40 hover:shadow-purple-500/60 backdrop-blur-sm transition-all duration-500 hover:scale-105 overflow-hidden">
+    
+    <span className="relative z-10 flex items-center gap-3">
+      Ikuti Perjalanannya
+      <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
+    </span>
+    
+    {/* Efek light sweep */}
+    <span className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/30 to-white/10 -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></span>
+    
+    {/* Efek glow tambahan */}
+    <span className="absolute inset-0 rounded-3xl shadow-[0_0_20px_5px_rgba(123,104,238,0.4)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+  </button>
+</div>
+
 
         
         <div 

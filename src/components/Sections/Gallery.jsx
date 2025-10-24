@@ -5,7 +5,7 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Gambar dummy dari Picsum Photos yang pasti berfungsi
+  
   const activities = [
     {
       id: 1,
