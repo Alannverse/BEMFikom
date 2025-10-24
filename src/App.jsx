@@ -9,6 +9,7 @@ import Coordinators from './components/Sections/Coordinators';
 import Contact from './components/Sections/Contact';
 import ComingSoon from './components/UI/ComingSoon';
 import BackToTop from './components/UI/BackToTop';
+import PhotoGallery from './components/Sections/PhotoGallery';
 
 export default function App() {
   useEffect(() => {
@@ -38,11 +39,13 @@ export default function App() {
          <ComingSoon /> 
         <Sejarah />
         <VisiMisi />
+        <PhotoGallery />
         <Programs />
         <Gallery />
         <KSB />
         <Coordinators />
         <Contact />
+        
        
 
        
