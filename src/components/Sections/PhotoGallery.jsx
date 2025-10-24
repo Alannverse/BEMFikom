@@ -68,7 +68,7 @@ const PhotoGallery = () => {
         {
           id: 7,
           src: "/2018.jpg",
-          caption: "Penandatanganan SK Rektor",
+          caption: "Kepengurusan Periode 2018/2019",
           year: "2018",
           leader: "Dicky Saputra",
           description: "Kepengurusan pertama BEM FIKOM"
