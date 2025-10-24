@@ -337,15 +337,7 @@ const PhotoGallery = () => {
                 selectedImage.isCurrent ? 'border-cyan-500' : 'border-gray-700'
               }`}>
                 <div className="relative">
-                  {/* Current Badge in Modal */}
-                  {selectedImage.isCurrent && (
-                    <div className="absolute top-4 left-4 z-10">
-                      <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                        🎯 Kepemimpinan Saat Ini
-                      </div>
-                    </div>
-                  )}
-                  
+                    
                   {/* Gunakan ImageDisplay component untuk modal */}
                   <ImageDisplay photo={selectedImage} isModal={true} />
                   
