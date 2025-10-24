@@ -71,7 +71,7 @@ const PhotoGallery = () => {
           caption: "Penandatanganan SK Rektor",
           year: "2018",
           leader: "Dicky Saputra",
-          description: "Dokumentasi penetapan resmi BEM FIKOM UKIP"
+          description: "Kepengurusan pertama BEM FIKOM"
         }
       ]
     },
@@ -148,7 +148,7 @@ const PhotoGallery = () => {
     }
   ];
 
-  // Filter photos berdasarkan kategori
+  
   const filteredCollections = activeFilter === 'all' 
     ? photoCollections 
     : photoCollections.filter(collection => collection.category === activeFilter);
