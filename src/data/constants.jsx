@@ -12,7 +12,7 @@ export const coordinators = [
   { name: 'Revan delio patjanan', division: 'Humas', image: 'revan humas.jpg' },
   { name: 'Ayub fortuna boro', division: 'Kesekretariatan', image: 'ayub kesek.jpg' },
   { name: 'Rut natalia', division: 'Kaderisasi', image: 'rut kader.jpg' },
-  { name: 'Nama Koordinator', division: 'Keuangan', image: 'dita keuangan.jpg' }
+  { name: 'Sariani dita', division: 'Keuangan', image: 'dita keuangan.jpg' }
 ];
 
 export const programs = [
