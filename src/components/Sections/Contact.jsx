@@ -105,7 +105,7 @@ const Contact = () => {
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-white/10">
                   <span className="text-white/80">Sabtu</span>
-                  <span className="text-white font-semibold">09.00 - 15.00 WITA</span>
+                  <span className="text-white font-semibold">09.00 - 17.00 WITA</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
                   <span className="text-white/80">Minggu</span>

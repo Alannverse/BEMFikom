@@ -23,7 +23,7 @@ const PhotoGallery = () => {
   // 🟢 Inisialisasi AOS
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 500,
       once: true,
       offset: 100,
     });
@@ -303,7 +303,7 @@ const PhotoGallery = () => {
 
     // Handler untuk klik gambar
     const handleImageClick = (e) => {
-      e.stopPropagation(); // Mencegah event bubbling
+      e.stopPropagation(); 
       if (onClick) {
         onClick();
       }

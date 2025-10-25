@@ -74,6 +74,7 @@ const Sejarah = () => {
           <h3 
             className="text-4xl md:text-5xl font-black text-white mb-4"
             data-aos="fade-down"
+            data-aos-duration="400"
           >
             Sejarah BEM FIKOM
           </h3>
@@ -90,6 +91,7 @@ const Sejarah = () => {
         <div 
           className="bg-white/5 backdrop-blur-xl rounded-2xl p-6 border border-white/10 mb-12"
           data-aos="fade-up"
+          data-aos-duration="400"
         >
           <div className="flex items-start gap-4">
             <div className="p-3 bg-blue-500/20 rounded-xl border border-blue-500/30">
@@ -194,6 +196,7 @@ const Sejarah = () => {
         <div 
           className="mt-12 text-center"
           data-aos="fade-up"
+          data-aos-duration="400"
         >
           <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-xl rounded-xl p-6 border border-white/10">
             <h4 className="text-lg font-bold text-white mb-3">Dari HIMTI ke BEM FIKOM</h4>

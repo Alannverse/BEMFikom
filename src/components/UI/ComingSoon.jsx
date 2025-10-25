@@ -7,7 +7,7 @@ const ComingSoon = () => {
         <div 
           className="space-y-8"
           data-aos="fade-up" 
-          data-aos-duration="800"
+          data-aos-duration="400"
         >
          
           <div className="space-y-4">
