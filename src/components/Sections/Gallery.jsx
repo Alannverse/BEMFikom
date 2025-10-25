@@ -89,6 +89,105 @@ const Gallery = () => {
       featured: true
       
     },
+    {
+      id: 6,
+      image: '/munas.jpg',
+      title: 'Munas VI Permikomnas',
+      category: 'organisasi',
+      date: '2019',
+      location: 'Universitas siliwangi, tasikmalaya',
+      description: 'Musyawarah nasional ke-6 permikomnas yang dihadiri oleh perwakilan BEM FIKOM UKI paulus makassar',
+      photos: ['/munas.jpg'],
+      
+    },
+    {
+      id: 7,
+      image: '/p2018.jpg',
+      title: 'dokumentasi pengurus BEM FIKOM periode 2018/2019',
+      category: 'organisasi',
+      date: '2018',
+      location: 'Universitas kristen indonesia paulus makassar',
+      description: 'Momen bersejarah dan foto bersama pengurus BEM FIKOM periode 2018/2019',
+      photos: ['/munas.jpg'],
+      
+    },
+    {
+      id: 8,
+      image: '/p2019.jpg',
+      title: 'dokumentasi pengurus BEM FIKOM periode 2019/2020',
+      category: 'organisasi',
+      date: '2020',
+      location: 'Universitas kristen indonesia paulus makassar',
+      description: 'Momen bersejarah dan foto bersama pengurus BEM FIKOM periode 2018/2019',
+      photos: ['/p2019.jpg'],
+      
+    },
+    {
+      id: 9,
+      image: '/pekan it.jpg',
+      title: 'Pekan IT BEM FIKOM UKI Paulus Makassar',
+      category: 'organisasi',
+      date: '2019',
+      location: 'Universitas kristen indonesia paulus makassar',
+      description: 'Momen seru pekan IT yang diadakan oleh BEM FIKOM UKI Paulus Makassar',
+      photos: ['/pekan it.jpg'],
+      
+    },
+     {
+      id: 10,
+      image: '/s it.jpg',
+      title: 'Seminar IT BEM FIKOM UKI Paulus Makassar',
+      category: 'organisasi',
+      date: '2019',
+      location: 'Gedung liling Universitas kristen indonesia paulus makassar',
+      description: 'Momen seminar it yang diadakan oleh BEM FIKOM UKI Paulus Makassar',
+      photos: ['/pekan it.jpg'],
+      
+    },
+    {
+      id: 11,
+      image: '/baksos19.jpg',
+      title: 'Bakti Sosial BEM FIKOM UKI Paulus Makassar',
+      category: 'sosial',
+      date: '27 februari 2019',
+      location: 'SMA negeri 1 bonggakaradeng',
+      description: 'satukan langkah mejalin keakrapan antara mahasiswa dan masyarakat',
+      photos: ['/baksos19.jpg'],
+      
+    },
+    {
+      id: 12,
+      image: '/rakernas.jpg',
+      title: 'Rapat Kerja Nasional Permikomnas',
+      category: 'organisasi',
+      date: '',
+      location: '',
+      description: '',
+      photos: ['/rakernas.jpg'],
+      
+    },
+    {
+      id: 13,
+      image: '/PLKO 017.jpg',
+      title: 'Pelatihan lanjutan kepemimpinan organisasi (PLKO) 2017',
+      category: 'organisasi',
+      date: '',
+      location: 'universitas kristen indonesia paulus makassar',
+      description: 'satukan langkah mejalin keakrapan antara mahasiswa dan masyarakat',
+      photos: ['/PLKO 017.jpg'],
+      
+    },
+    {
+      id: 14,
+      image: '/ultah himatika.jpg',
+      title: 'Anniversary himatika yang ke-11',
+      category: 'organisasi',
+      date: '',
+      location: 'Gedung lilin Universitas kristen indonesia paulus makassar',
+      description: '',
+      photos: ['/ultah himatika.jpg'],
+      
+    },
   ];
 
   // Kategori kegiatan
