@@ -11,20 +11,30 @@ const VisiMisi = () => {
           <h3
             className="text-5xl md:text-6xl font-black text-white mb-6"
             data-aos="fade-down"
+            data-aos-duration="300"
+            data-aos-easing="ease-out-cubic"
           >
             Visi & Misi
           </h3>
           <div
             className="inline-block bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-sm px-6 py-3 rounded-full border border-blue-400/30"
             data-aos="fade-down"
-            data-aos-delay="100"
+            data-aos-delay="50"
+            data-aos-duration="300"
+            data-aos-easing="ease-out-cubic"
           >
             <p className="text-blue-200 text-lg">Arah & Tujuan BEM FIKOM 2025/2026</p>
           </div>
         </div>
 
         {/* Tab Switcher */}
-        <div className="flex justify-center gap-4 mb-12" data-aos="fade-up">
+        <div 
+          className="flex justify-center gap-4 mb-12" 
+          data-aos="fade-up"
+          data-aos-duration="300"
+          data-aos-delay="100"
+          data-aos-easing="ease-out-cubic"
+        >
           <button
             onClick={() => setActiveTab('visi')}
             className={`px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 ${
@@ -51,7 +61,13 @@ const VisiMisi = () => {
 
         {/* Visi Content */}
         {activeTab === 'visi' && (
-          <div className="relative" data-aos="fade-up">
+          <div 
+            className="relative" 
+            data-aos="fade-up"
+            data-aos-duration="400"
+            data-aos-easing="ease-out-cubic"
+            data-aos-offset="50"
+          >
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-cyan-500/30 rounded-3xl blur-3xl"></div>
             <div className="relative bg-white/5 backdrop-blur-2xl rounded-3xl p-12 md:p-16 border border-white/10 shadow-2xl">
               <div className="flex items-start gap-6 mb-8">
@@ -73,7 +89,13 @@ const VisiMisi = () => {
 
         {/* Misi Content */}
         {activeTab === 'misi' && (
-          <div className="relative" data-aos="fade-up">
+          <div 
+            className="relative" 
+            data-aos="fade-up"
+            data-aos-duration="400"
+            data-aos-easing="ease-out-cubic"
+            data-aos-offset="50"
+          >
             <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 to-pink-500/30 rounded-3xl blur-3xl"></div>
             <div className="relative bg-white/5 backdrop-blur-2xl rounded-3xl p-12 md:p-16 border border-white/10 shadow-2xl">
               <div className="flex items-start gap-6 mb-8">

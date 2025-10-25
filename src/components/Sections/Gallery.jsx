@@ -21,12 +21,13 @@ const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [imageLoaded, setImageLoaded] = useState({});
 
-  // 🟢 Inisialisasi AOS
+  // 🟢 Inisialisasi AOS - DIPERCEPAT
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 400, // Dipercepat dari 800
       once: true,
-      offset: 100,
+      offset: 50, // Dipercepat dari 100
+      easing: 'ease-out-cubic' // Efek easing lebih smooth
     });
   }, []);
 
@@ -153,7 +154,10 @@ const Gallery = () => {
       <div className="max-w-7xl mx-auto">
         
         {/* HEADER SECTION */}
-        <div className="text-center mb-16" data-aos="fade-up">
+        <div className="text-center mb-16" 
+             data-aos="fade-up"
+             data-aos-duration="300"
+             data-aos-easing="ease-out-cubic">
           <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
               Gallery
@@ -165,7 +169,11 @@ const Gallery = () => {
         </div>
 
         {/* CATEGORY FILTER */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12" data-aos="fade-up">
+        <div className="flex flex-wrap justify-center gap-3 mb-12" 
+             data-aos="fade-up"
+             data-aos-duration="300"
+             data-aos-delay="100"
+             data-aos-easing="ease-out-cubic">
           {categories.map((category) => (
             <button
               key={category.id}
@@ -188,7 +196,10 @@ const Gallery = () => {
             <div
               key={activity.id}
               data-aos="zoom-in"
-              data-aos-delay={index * 100}
+              data-aos-duration="400"
+              data-aos-delay={index * 50} // Dipercepat dari 100
+              data-aos-easing="ease-out-cubic"
+              data-aos-offset="50"
               className={`group relative cursor-pointer transition-all duration-500 hover:-translate-y-2 ${
                 activity.featured ? 'md:col-span-2 lg:col-span-1' : ''
               }`}
@@ -280,7 +291,11 @@ const Gallery = () => {
         </div>
 
         {/* CTA SECTION */}
-        <div className="text-center mt-16" data-aos="fade-up">
+        <div className="text-center mt-16" 
+             data-aos="fade-up"
+             data-aos-duration="300"
+             data-aos-delay="100"
+             data-aos-easing="ease-out-cubic">
           <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20">
             <h4 className="text-2xl font-bold text-white mb-4">Jadi Bagian Kegiatan Kami</h4>
             <p className="text-cyan-200 mb-6 max-w-md mx-auto">

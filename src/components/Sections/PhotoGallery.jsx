@@ -20,12 +20,13 @@ const PhotoGallery = () => {
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
 
-  // 🟢 Inisialisasi AOS
+  // 🟢 Inisialisasi AOS - DIPERCEPAT
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 400, // Dipercepat dari 500
       once: true,
-      offset: 100,
+      offset: 50, // Dipercepat dari 100
+      easing: 'ease-out-cubic' // Efek easing lebih smooth
     });
   }, []);
 
@@ -293,7 +294,7 @@ const PhotoGallery = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedKSB, closeModal, prevKSB, nextKSB]);
 
-  // 🖼️ Komponen Gambar yang Dioptimalkan - PERBAIKAN DI SINI
+  // 🖼️ Komponen Gambar yang Dioptimalkan
   const ImageDisplay = ({ team, isModal = false, onClick = null }) => {
     const [imgError, setImgError] = useState(false);
     const [imgLoaded, setImgLoaded] = useState(false);
@@ -353,7 +354,10 @@ const PhotoGallery = () => {
       <div className="max-w-7xl mx-auto">
         
         {/* HEADER YANG LEBIH RESPONSIF */}
-        <div className="text-center mb-12 md:mb-16" data-aos="fade-up">
+        <div className="text-center mb-12 md:mb-16" 
+             data-aos="fade-up"
+             data-aos-duration="300"
+             data-aos-easing="ease-out-cubic">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
               Gallery KSB
@@ -364,7 +368,11 @@ const PhotoGallery = () => {
           </p>
 
           {/* FILTER BUTTONS YANG LEBIH RESPONSIF */}
-          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mt-6" data-aos="zoom-in">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mt-6" 
+               data-aos="zoom-in"
+               data-aos-duration="300"
+               data-aos-delay="100"
+               data-aos-easing="ease-out-cubic">
             {[
               { id: "all", label: "Semua Periode" },
               { id: "himatika", label: "HIMATIKA" },
@@ -387,7 +395,11 @@ const PhotoGallery = () => {
 
         {/* GRID YANG LEBIH RESPONSIF */}
         {filteredPeriods.map((period, periodIndex) => (
-          <div key={periodIndex} className="mb-12 md:mb-16" data-aos="fade-up">
+          <div key={periodIndex} className="mb-12 md:mb-16" 
+               data-aos="fade-up"
+               data-aos-duration="400"
+               data-aos-easing="ease-out-cubic"
+               data-aos-offset="50">
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 md:mb-8 text-center border-b border-gray-700 pb-3 md:pb-4 px-4">
               {period.period}
             </h3>
@@ -397,7 +409,10 @@ const PhotoGallery = () => {
                 <div
                   key={index}
                   data-aos="zoom-in"
-                  data-aos-delay={index * 100}
+                  data-aos-duration="400"
+                  data-aos-delay={index * 50} // Dipercepat dari 100
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-offset="50"
                   className={`group cursor-pointer transition-all duration-300 hover:-translate-y-2 ${
                     team.isCurrent
                       ? "ring-2 ring-cyan-500 ring-offset-2 ring-offset-slate-900 rounded-xl"
@@ -417,7 +432,6 @@ const PhotoGallery = () => {
                     className="relative overflow-hidden rounded-xl bg-gray-800 border border-gray-700"
                     onClick={() => openModal(team, index, periodIndex)}
                   >
-                    {/* PERBAIKAN: ImageDisplay sekarang menerima onClick prop */}
                     <ImageDisplay 
                       team={team} 
                       onClick={() => openModal(team, index, periodIndex)}
@@ -467,7 +481,7 @@ const PhotoGallery = () => {
           </div>
         ))}
 
-        {/* MODAL YANG LEBIH RESPONSIF - PERBAIKAN TOMBOL CLOSE */}
+        {/* MODAL YANG LEBIH RESPONSIF */}
         {selectedKSB && (
           <div className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-2 sm:p-4">
             <div 
@@ -494,10 +508,9 @@ const PhotoGallery = () => {
                 className={`relative bg-gray-800 rounded-xl overflow-hidden border ${
                   selectedKSB.isCurrent ? "border-cyan-500" : "border-gray-700"
                 } w-full max-h-[90vh] overflow-y-auto z-40`}
-                onClick={(e) => e.stopPropagation()} // Mencegah close saat klik di dalam modal
+                onClick={(e) => e.stopPropagation()}
               >
                 <div className="relative">
-                  {/* ImageDisplay di modal TIDAK bisa diklik untuk close */}
                   <ImageDisplay team={selectedKSB} isModal={true} />
                   
                   {/* NAVIGATION BUTTONS */}
